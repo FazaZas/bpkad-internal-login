@@ -34,7 +34,7 @@
     <link rel="stylesheet" href="assets/css/list-aplikasi/sweetalert2.css">
 
     <!-- Template Main CSS File -->
-    <link href="https://fmis.bpkp.go.id/s2/bojonegorokab/assetsberanda/css/style.css" rel="stylesheet">
+    <link href="assets/css/list-aplikasi/style.css" rel="stylesheet">
 
     <style>
         th,
@@ -90,13 +90,7 @@
             <nav id="navbar" class="navbar">
                 <ul>
                     <li><span><b>hi, kamu sudah masuk</b></span></li>
-                    <!-- <li><a class="nav-link scrollto" href="#visimisi">Visi Misi</a></li>
-                    <li><a class="nav-link scrollto" href="#fitur">Fitur</a></li> -->
-                    
-                    
-                    <li><a type="button" class="getstarted " data-bs-toggle="modal" data-bs-target="#login">Logout</a>
-                        
-                    </li>
+                    <li><a type="button" class="getstarted" data-bs-toggle="modal" data-bs-target="#login">Masuk</a></li>
                 </ul>
                 <i class="bi bi-list mobile-nav-toggle"></i>
             </nav><!-- .navbar -->
@@ -235,6 +229,33 @@
                             <small>Lorem ipsum dolor sit amet consectetur adipisicing elit</small>
                         </div>
                     </div>
+                    <div class="col-lg-3 mt-4">
+                        <div class="box" data-aos="fade-down" data-aos-delay="600">
+                            <a href="#">
+                                <img src="assets/images/profile.png" class="img-fluid" alt="">
+                                <h3 class="text-center">Profile</h3>
+                            </a>
+                            <small>Lorem ipsum dolor sit amet consectetur adipisicing elit</small>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 mt-4">
+                        <div class="box" data-aos="fade-down" data-aos-delay="600">
+                            <a href="#">
+                                <img src="assets/images/reset.png" class="img-fluid" alt="">
+                                <h3 class="text-center">Ganti Password</h3>
+                            </a>
+                            <small>Lorem ipsum dolor sit amet consectetur adipisicing elit</small>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 mt-4">
+                        <div class="box" data-aos="fade-down" data-aos-delay="600">
+                            <a href="#">
+                                <img src="assets/images/exit.png" class="img-fluid" alt="">
+                                <h3 class="text-center">Logout</h3>
+                            </a>
+                            <small>Lorem ipsum dolor sit amet consectetur adipisicing elit</small>
+                        </div>
+                    </div>
 
                 </div>
 
@@ -271,11 +292,7 @@
         <!-- Grid container -->
         <div class="container p-4 pb-0">
             <div class="mt-5 text-dark">
-                <p class=" text-center">Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                  accusantium doloremque laudantium, totam rem
-                  aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
-                  explicabo.
-                  Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur.</p>
+                <p class=" text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda atque molestias odio ducimus nisi voluptate in incidunt quo dignissimos illo error, amet, eaque commodi laborum reprehenderit magnam quis! Exercitationem, iusto.</p>
               </div>
         </div>
       
@@ -300,6 +317,8 @@
 
     <!-- MDB -->
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.2/mdb.min.js"></script>
+
+
 <script type="text/javascript">
     document.addEventListener('DOMContentLoaded', function(event) {
         var modalLogin = document.getElementById('login')
@@ -310,6 +329,95 @@
         })
     });
 </script>
+
+<!-- Modal -->
+<div class="modal fade" id="login" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="loginLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-body d-flex justify-content-between">
+                <a href="#" class="logo d-flex align-items-center">
+                    <img src="https://fmis.bpkp.go.id/s2/bojonegorokab/assetsberanda/img/logo.svg" alt="" style="width: 30px;">
+                    <span style="margin-left: 10px; font-family: Nunito;color: navy;"><strong>Otentifikasi</strong>
+                        Pengguna</span>
+                </a>
+                <button type="button" class="btn-close btn-danger" data-bs-dismiss="modal"
+                    aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row featurette">
+                    <div class="col-md-5 order-md-2">
+                        <form method="POST" action="https://fmis.bpkp.go.id/s2/bojonegorokab/login" autocomplete="off">
+                            <input type="hidden" name="_token" value="KoZedAr8zIDdJYjk4TnFm9LWfLeZJAwP3SQdOg5N">                                <div class="mb-3">
+                                <label for="validationServerUsername" class="form-label"><small> Akun
+                                        Pengguna</small></label>
+                                <input class="form-control " id="kduser"
+                                    name="kduser" value=""" required>
+                                  
+            </div>
+            <div class="       mb-4">
+                                <label for="validationServer05" class="form-label"><small>
+                                        Password</small></label>
+                                <input type="password" class="form-control "
+                                    name="password" id="password" required>
+                            </div>
+                            
+
+                            <div class="form-floating mb-3">
+                                <select class="form-select " size="1"
+                                    id="inputState" aria-label="Floating label select example" required
+                                    name="tahun">
+                                                                                <optgroup>
+                                            <option >
+                                                2019</option>
+                                        </optgroup>
+                                                                                <optgroup>
+                                            <option >
+                                                2020</option>
+                                        </optgroup>
+                                                                                <optgroup>
+                                            <option >
+                                                2021</option>
+                                        </optgroup>
+                                                                                <optgroup>
+                                            <option selected>
+                                                2022</option>
+                                        </optgroup>
+                                                                                <optgroup>
+                                            <option >
+                                                2023</option>
+                                        </optgroup>
+                                                                                <optgroup>
+                                            <option >
+                                                2024</option>
+                                        </optgroup>
+                                                                                <optgroup>
+                                            <option >
+                                                2025</option>
+                                        </optgroup>
+                                                                        </select>
+                                <label for="inputState">Pilih Tahun Anggaran</label>
+                                                                </div>
+                            <!-- <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">ingat saya</label>
+            </div> -->
+                            <button type="submit" class="btn btn-primary btn-block">Masuk</button>
+                        </form>
+                    </div>
+                    <div class="col-md-6 order-md-1 d-flex">
+                        <img src="https://fmis.bpkp.go.id/s2/bojonegorokab/assetsberanda/img/login.svg" alt="" class="mx-auto d-block"
+                            style="max-width: 300px;">
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
 </body>
 
 </html>
