@@ -1,54 +1,111 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-	<title>Bpkad Integrated System</title>
-	<link rel="stylesheet" type="text/css" href="assets/css/style-login.css">
-	<link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
-	<script src="https://kit.fontawesome.com/a81368914c.js"></script>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/logo-website.png">
+    <title>Elite Admin Template - The Ultimate Multipurpose admin template</title>
+    
+    <!-- page css -->
+    <link href="assets/css/login-register-lock.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="assets/css/style.min.css" rel="stylesheet">
+    <!-- font -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
+    
+    
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
 </head>
-<body>
-	<img class="wave" src="assets/images/wave.png">
-	<div class="container">
-		<div class="img">
-			<img src="assets/images/Mediamodifier-Design.svg">
-		</div>
-		<div class="login-content">
-			<form action="index.html">
-				<img src="assets/images/avatar.svg">
-				<h2 class="title">Login</h2>
-           		<div class="input-div one">
-           		   <div class="i">
-           		   		<i class="fas fa-user"></i>
-           		   </div>
-           		   <div class="div">
-           		   		<h5>Username</h5>
-           		   		<input type="text" class="input">
-           		   </div>
-           		</div>
-           		<div class="input-div pass">
-           		   <div class="i"> 
-           		    	<i class="fas fa-lock"></i>
-           		   </div>
-           		   <div class="div">
-           		    	<h5>Password</h5>
-           		    	<input type="password" class="input">
-            	   </div>
-            	</div>
-           		<div class="input-div pass">
-           		   <div class="i"> 
-           		    	<i class="fas fa-lock"></i>
-           		   </div>
-           		   <div class="div">
-           		    	<h5>Captcha</h5>
-           		    	<input type="password" class="input">
-            	   </div>
-            	</div>
-            	<a href="#">Forgot Password?</a>
-            	<input type="submit" class="btn" value="Login">
-            </form>
+
+<body class="skin-blue card-no-border">
+
+    <div class="preloader">
+        <div class="loader">
+            <div class="loader__figure"></div>
+            <p class="loader__label">Sign In</p>
         </div>
     </div>
-    <script type="text/javascript" src="assets/js/main.js"></script>
+
+    <section id="wrapper">
+        <div class="login-register" style="background-image:url(assets/images/login-register.jpg);">
+            <div class="login-box card">
+                <div class="card-body">
+                    <form class="form-horizontal form-material" id="loginform" action="index.html">
+                        <br>
+                        <h1 class="box-title m-b-20 text-center">Login</h1>
+                        <br>
+                        <div class="form-group ">
+                            <div class="col-xs-12">
+                                <input class="form-control" type="text" required="" placeholder="Username"> </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-xs-12">
+                                <input class="form-control" type="password" required="" placeholder="Password"> </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-xs-12">
+						   <img src="assets/images/captcha.jpeg" alt="captcha">
+						   <br>
+						   <br>
+                                <input class="form-control" type="text" required="" placeholder="Masukan Kode Captcha Di Atas . . ."> </div>
+                        </div>
+                        <br>
+                        <div class="form-group text-center">
+                            <div class="col-xs-12 p-b-20">
+                                <button class="btn btn-block btn-lg btn-info btn-rounded" type="submit">Log In</button>
+                            </div>
+                        </div>
+            
+                        <div class="form-group m-b-0">
+                            <div class="col-sm-12 text-center">
+                               <p>BPKAD INTEGRATED SYSTEM</p>
+                            </div>
+                        </div>
+                    </form>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- ============================================================== -->
+    <!-- End Wrapper -->
+    <!-- ============================================================== -->
+    <!-- ============================================================== -->
+    <!-- All Jquery -->
+    <!-- ============================================================== -->
+    <script src="assets/js/jquery-3.2.1.min.js"></script>
+    <!-- Bootstrap tether Core JavaScript -->
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <!--Custom JavaScript -->
+    <script type="text/javascript">
+        $(function() {
+            $(".preloader").fadeOut();
+        });
+        $(function() {
+            $('[data-toggle="tooltip"]').tooltip()
+        });
+        // ============================================================== 
+        // Login and Recover Password 
+        // ============================================================== 
+        $('#to-recover').on("click", function() {
+            $("#loginform").slideUp();
+            $("#recoverform").fadeIn();
+        });
+    </script>
+    
 </body>
+
 </html>
