@@ -1,372 +1,557 @@
-
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <!-- Favicons -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/images/logo-website.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/images/logo-website.png"
+    />
 
-<head>
-    <meta charset="utf-8">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-     <!-- Favicons -->
-     <link rel="icon" type="image/png" sizes="16x16" href="assets/images/logo-website.png">
-     <link rel="apple-touch-icon" type="image/png" sizes="16x16" href="assets/images/logo-website.png">
- 
     <title>Instegrated System</title>
 
-    <meta content="" name="description">
-    <meta content="" name="keywords">
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
 
     <!-- Google Fonts -->
-    <link rel="stylesheet" href="assets/css/list-aplikasi/nunito.css">
+    <link rel="stylesheet" href="assets/css/list-aplikasi/nunito.css" />
 
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
 
     <!-- Vendor CSS Files -->
 
-    <link rel="stylesheet" href="assets/css/list-aplikasi/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/list-aplikasi/bootstrap-icons.css">
-    <link rel="stylesheet" href="assets/css/list-aplikasi/aos.css">
-    <link rel="stylesheet" href="assets/css/list-aplikasi/remixicon.css">
-    <link rel="stylesheet" href="assets/css/list-aplikasi/swiper-bundle.min.css">
-    <link rel="stylesheet" href="assets/css/list-aplikasi/glightbox.min.css">
+    <link rel="stylesheet" href="assets/css/list-aplikasi/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="assets/css/list-aplikasi/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="assets/css/list-aplikasi/aos.css" />
+    <link rel="stylesheet" href="assets/css/list-aplikasi/remixicon.css" />
+    <link
+      rel="stylesheet"
+      href="assets/css/list-aplikasi/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/list-aplikasi/glightbox.min.css" />
 
-    
-    <link rel="stylesheet" href="assets/css/list-aplikasi/sweetalert2.css">
+    <link rel="stylesheet" href="assets/css/list-aplikasi/sweetalert2.css" />
 
     <!-- Template Main CSS File -->
-    <link href="assets/css/list-aplikasi/style.css" rel="stylesheet">
+    <link href="assets/css/list-aplikasi/style.css" rel="stylesheet" />
 
     <style>
-        th,
-        td {
-            font-family: nunito;
-        }
+      th,
+      td {
+        font-family: nunito;
+      }
 
-        th {
-            font-size: 13pt;
-            color: navy;
-        }
+      th {
+        font-size: 13pt;
+        color: navy;
+      }
 
-        td {
-            font-size: 10pt;
-            text-align: justify;
-        }
+      td {
+        font-size: 10pt;
+        text-align: justify;
+      }
 
-        ::-webkit-scrollbar {
-            width: 8px;
-        }
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
 
-        ::-webkit-scrollbar-track {
-            background: #f1f1f1;
-        }
+      ::-webkit-scrollbar-track {
+        background: #f1f1f1;
+      }
 
-        ::-webkit-scrollbar-thumb {
-            background: rgb(24, 24, 118);
-        }
+      ::-webkit-scrollbar-thumb {
+        background: rgb(24, 24, 118);
+      }
 
-        ::-webkit-scrollbar-thumb:hover {
-            background: #555;
-        }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #555;
+      }
 
-        /* optgroup { font-size:5px; } */
+      /* optgroup { font-size:5px; } */
 
-        .box {
-            text-align: justify !important;
-        }
-
+      .box {
+        text-align: justify !important;
+      }
     </style>
-</head>
+  </head>
 
-<body>
+  <body>
     <!-- ======= Header ======= -->
     <header id="header" class="header fixed-top">
-        <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+      <div
+        class="container-fluid container-xl d-flex align-items-center justify-content-between"
+      >
+        <a href="/" class="logo d-flex align-items-center">
+          <img src="assets/images/logo-website.png" alt="Integrated System" />
+          <span style="font-size: 16pt"> Integrated System</span>
+        </a>
 
-            <a href="/" class="logo d-flex align-items-center">
-                <img src="assets/images/logo-website.png" alt="Integrated System">
-                <span style="font-size: 16pt;"> Integrated System</span>
-            </a>
-
-            <nav id="navbar" class="navbar">
-                <ul>
-                    <li><span><b>hi, kamu sudah masuk</b></span></li>
-                    <li><a type="button" class="getstarted" data-bs-toggle="modal" data-bs-target="#login">Masuk</a></li>
-                </ul>
-                <i class="bi bi-list mobile-nav-toggle"></i>
-            </nav><!-- .navbar -->
-
-        </div>
+        <nav id="navbar" class="navbar">
+          <ul>
+            <li>
+              <span><b>hi, kamu sudah masuk</b></span>
+            </li>
+            <li>
+              <a
+                type="button"
+                class="getstarted"
+                data-bs-toggle="modal"
+                data-bs-target="#login"
+                >Masuk</a
+              >
+            </li>
+          </ul>
+          <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav>
+        <!-- .navbar -->
+      </div>
     </header>
 
-    
-
     <main id="main">
-
-        <!-- ======= Fitur Section ======= -->
-        <section id="fitur" class="values mt-5">
-
-            <div class="container mt-5" data-aos="fade-up">
-
-                <!-- <h1 class="section-header mt-5">
+      <!-- ======= Fitur Section ======= -->
+      <section id="fitur" class="values mt-5">
+        <div class="container mt-5" data-aos="fade-up">
+          <!-- <h1 class="section-header mt-5">
                     <h1>Iki Aplikasine Sing Iso Mbok Akses</h1>
                 </h1> -->
 
-                <div class="row">
-
-                    <div class="col-lg-3 mt-4">
-                        <div class="box" data-aos="fade-down" data-aos-delay="200">
-                            <a href="https://bpkad.bojonegorokab.go.id/">
-                                <img src="assets/images/web-admin.png" class="img-fluid"
-                                alt="">
-                                <h3 class="text-center">Web Admin</h3>
-                            </a>
-                            <small>Lorem ipsum dolor sit amet consectetur adipisicing elit</small>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 mt-4">
-                        <div class="box" data-aos="fade-down" data-aos-delay="200">
-                            <a href="https://bpkad.bojonegorokab.go.id/">
-                                <img src="assets/images/web-bpkad.png" class="img-fluid"
-                                alt="">
-                                <h3 class="text-center">Web BPKAD</h3>
-                            </a>
-                            <small>Lorem ipsum dolor sit amet consectetur adipisicing elit</small>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 mt-4">
-                        <div class="box" data-aos="fade-down" data-aos-delay="400">
-                            <a href="https://apbd.bpkad.id/">
-                                <img src="assets/images/apbd-online.png" class="img-fluid" alt="">
-                                <h3 class="text-center">APBD Online</h3>
-                            </a>
-                            <small>Lorem ipsum dolor sit amet consectetur adipisicing elit</small>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 mt-4">
-                        <div class="box" data-aos="fade-down" data-aos-delay="600">
-                            <a href="https://superdilan.bpkad.id/">
-                                <img src="assets/images/search-rafiki.png" class="img-fluid" alt="">
-                                <h3 class="text-center">Transparansi</h3>
-                            </a>
-                            <small>Lorem ipsum dolor sit amet consectetur adipisicing elit.</small>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 mt-4">
-                        <div class="box" data-aos="fade-down" data-aos-delay="400">
-                            <a href="https://superdilan.bpkad.id/">
-                                <img src="assets/images/realisasi.jpg" class="img-fluid" alt="">
-                                <h3 class="text-center">Realisasi</h3>
-                            </a>
-                            <small>Lorem ipsum dolor sit amet consectetur adipisicing elit.</small>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 mt-4">
-                        <div class="box" data-aos="fade-down" data-aos-delay="600">
-                            <a href="http://10.0.8.21/simda.php/login">
-                                <img src="assets/images/simda-cyber.png" class="img-fluid" alt="">
-                                <h3 class="text-center">Simda Cyber</h3>
-                            </a>
-                            <small>Lorem ipsum dolor sit amet consectetur adipisicing elit</small>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 mt-4">
-                        <div class="box" data-aos="fade-down" data-aos-delay="200">
-                            <a href="#">
-                                <img src="assets/images/security.png" class="img-fluid" alt="">
-                                <h3 class="text-center">Open Simda</h3>
-                            </a>
-                                <small>Lorem ipsum dolor sit amet consectetur adipisicing elit</small>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 mt-4">
-                        <div class="box" data-aos="fade-down" data-aos-delay="200">
-                            <a href="#">
-                                <img src="assets/images/fmis.png" class="img-fluid" alt="">
-                                <h3 class="text-center">FMIS</h3>
-                            </a>
-                                <small>Lorem ipsum dolor sit amet consectetur adipisicing elit</small>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 mt-4">
-                        <div class="box" data-aos="fade-down" data-aos-delay="600">
-                            <a href="https://superdilan.bpkad.id/">
-                                <img src="assets/images/super-dilan.png" class="img-fluid" alt="">
-                                <h3 class="text-center">Super Dilan</h3>
-                            </a>
-                            <small>Lorem ipsum dolor sit amet consectetur adipisicing elit</small>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 mt-4">
-                        <div class="box" data-aos="fade-down" data-aos-delay="600">
-                            <a href="#">
-                                <img src="assets/images/rania.png" class="img-fluid" alt="">
-                                <h3 class="text-center">Rania</h3>
-                            </a>
-                            <small>Lorem ipsum dolor sit amet consectetur adipisicing elit</small>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 mt-4">
-                        <div class="box" data-aos="fade-down" data-aos-delay="600">
-                            <a href="#">
-                                <img src="assets/images/afifah.png" class="img-fluid" alt="">
-                                <h3 class="text-center">Afifah</h3>
-                            </a>
-                            <small>Lorem ipsum dolor sit amet consectetur adipisicing elit</small>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 mt-4">
-                        <div class="box" data-aos="fade-down" data-aos-delay="600">
-                            <a href="#/">
-                                <img src="assets/images/aset-daerah.png" class="img-fluid" alt="">
-                                <h3 class="text-center">Aisah</h3>
-                            </a>
-                            <small>Lorem ipsum dolor sit amet consectetur adipisicing elit</small>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 mt-4">
-                        <div class="box" data-aos="fade-down" data-aos-delay="600">
-                            <a href="#">
-                                <img src="assets/images/at.png" class="img-fluid" alt="">
-                                <h3 class="text-center">AT</h3>
-                            </a>
-                            <small>Lorem ipsum dolor sit amet consectetur adipisicing elit</small>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 mt-4">
-                        <div class="box" data-aos="fade-down" data-aos-delay="600">
-                            <a href="#">
-                                <img src="assets/images/pemadam.png" class="img-fluid" alt="">
-                                <h3 class="text-center">Siska</h3>
-                            </a>
-                            <small>Lorem ipsum dolor sit amet consectetur adipisicing elit</small>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 mt-4">
-                        <div class="box" data-aos="fade-down" data-aos-delay="600">
-                            <a href="#">
-                                <img src="assets/images/e-sign.png" class="img-fluid" alt="">
-                                <h3 class="text-center">E-Sign</h3>
-                            </a>
-                            <small>Lorem ipsum dolor sit amet consectetur adipisicing elit</small>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 mt-4">
-                        <div class="box" data-aos="fade-down" data-aos-delay="600">
-                            <a href="#">
-                                <img src="assets/images/host.png" class="img-fluid" alt="">
-                                <h3 class="text-center">Host</h3>
-                            </a>
-                            <small>Lorem ipsum dolor sit amet consectetur adipisicing elit</small>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 mt-4">
-                        <div class="box" data-aos="fade-down" data-aos-delay="600">
-                            <a href="#">
-                                <img src="assets/images/role.png" class="img-fluid" alt="">
-                                <h3 class="text-center">Role</h3>
-                            </a>
-                            <small>Lorem ipsum dolor sit amet consectetur adipisicing elit</small>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 mt-4">
-                        <div class="box" data-aos="fade-down" data-aos-delay="600">
-                            <a href="#">
-                                <img src="assets/images/permission.png" class="img-fluid" alt="">
-                                <h3 class="text-center">Permission</h3>
-                            </a>
-                            <small>Lorem ipsum dolor sit amet consectetur adipisicing elit</small>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 mt-4">
-                        <div class="box" data-aos="fade-down" data-aos-delay="600">
-                            <a href="#">
-                                <img src="assets/images/users.png" class="img-fluid" alt="">
-                                <h3 class="text-center">Users</h3>
-                            </a>
-                            <small>Lorem ipsum dolor sit amet consectetur adipisicing elit</small>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 mt-4">
-                        <div class="box" data-aos="fade-down" data-aos-delay="600">
-                            <a href="#">
-                                <img src="assets/images/domain.png" class="img-fluid" alt="">
-                                <h3 class="text-center">Domain</h3>
-                            </a>
-                            <small>Lorem ipsum dolor sit amet consectetur adipisicing elit</small>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 mt-4">
-                        <div class="box" data-aos="fade-down" data-aos-delay="600">
-                            <a href="#">
-                                <img src="assets/images/module.png" class="img-fluid" alt="">
-                                <h3 class="text-center">Module</h3>
-                            </a>
-                            <small>Lorem ipsum dolor sit amet consectetur adipisicing elit</small>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 mt-4">
-                        <div class="box" data-aos="fade-down" data-aos-delay="600">
-                            <a href="#">
-                                <img src="assets/images/template.png" class="img-fluid" alt="">
-                                <h3 class="text-center">Template</h3>
-                            </a>
-                            <small>Lorem ipsum dolor sit amet consectetur adipisicing elit</small>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 mt-4">
-                        <div class="box" data-aos="fade-down" data-aos-delay="600">
-                            <a href="#">
-                                <img src="assets/images/profile.png" class="img-fluid" alt="">
-                                <h3 class="text-center">Profile</h3>
-                            </a>
-                            <small>Lorem ipsum dolor sit amet consectetur adipisicing elit</small>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 mt-4">
-                        <div class="box" data-aos="fade-down" data-aos-delay="600">
-                            <a href="#">
-                                <img src="assets/images/hak-akses.png" class="img-fluid" alt="">
-                                <h3 class="text-center">Hak Akses</h3>
-                            </a>
-                            <small>Lorem ipsum dolor sit amet consectetur adipisicing elit</small>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 mt-4">
-                        <div class="box" data-aos="fade-down" data-aos-delay="600">
-                            <a href="#">
-                                <img src="assets/images/reset.png" class="img-fluid" alt="">
-                                <h3 class="text-center">Ganti Password</h3>
-                            </a>
-                            <small>Lorem ipsum dolor sit amet consectetur adipisicing elit</small>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 mt-4">
-                        <div class="box" data-aos="fade-down" data-aos-delay="600">
-                            <a href="#">
-                                <img src="assets/images/exit.png" class="img-fluid" alt="">
-                                <h3 class="text-center">Logout</h3>
-                            </a>
-                            <small>Lorem ipsum dolor sit amet consectetur adipisicing elit</small>
-                        </div>
-                    </div>
-
-                </div>
-
+          <div class="row">
+            <div class="col-lg-3 mt-4">
+              <div class="box" data-aos="fade-down" data-aos-delay="200">
+                <a href="https://bpkad.bojonegorokab.go.id/">
+                  <img
+                    src="assets/images/web-admin.png"
+                    class="img-fluid"
+                    alt=""
+                  />
+                  <h3 class="text-center">Web Admin</h3>
+                </a>
+                <small
+                  >Lorem ipsum dolor sit amet consectetur adipisicing
+                  elit</small
+                >
+              </div>
             </div>
 
-        </section><!-- End Values Section -->
+            <div class="col-lg-3 mt-4">
+              <div class="box" data-aos="fade-down" data-aos-delay="200">
+                <a href="https://bpkad.bojonegorokab.go.id/">
+                  <img
+                    src="assets/images/web-bpkad.png"
+                    class="img-fluid"
+                    alt=""
+                  />
+                  <h3 class="text-center">Web BPKAD</h3>
+                </a>
+                <small
+                  >Lorem ipsum dolor sit amet consectetur adipisicing
+                  elit</small
+                >
+              </div>
+            </div>
 
-        <!-- ======= F.A.Q Section ======= -->
-        
-    </main><!-- End #main -->
+            <div class="col-lg-3 mt-4">
+              <div class="box" data-aos="fade-down" data-aos-delay="400">
+                <a href="https://apbd.bpkad.id/">
+                  <img
+                    src="assets/images/apbd-online.png"
+                    class="img-fluid"
+                    alt=""
+                  />
+                  <h3 class="text-center">APBD Online</h3>
+                </a>
+                <small
+                  >Lorem ipsum dolor sit amet consectetur adipisicing
+                  elit</small
+                >
+              </div>
+            </div>
+
+            <div class="col-lg-3 mt-4">
+              <div class="box" data-aos="fade-down" data-aos-delay="600">
+                <a href="https://superdilan.bpkad.id/">
+                  <img
+                    src="assets/images/search-rafiki.png"
+                    class="img-fluid"
+                    alt=""
+                  />
+                  <h3 class="text-center">Transparansi</h3>
+                </a>
+                <small
+                  >Lorem ipsum dolor sit amet consectetur adipisicing
+                  elit.</small
+                >
+              </div>
+            </div>
+
+            <div class="col-lg-3 mt-4">
+              <div class="box" data-aos="fade-down" data-aos-delay="400">
+                <a href="https://superdilan.bpkad.id/">
+                  <img
+                    src="assets/images/realisasi.jpg"
+                    class="img-fluid"
+                    alt=""
+                  />
+                  <h3 class="text-center">Realisasi</h3>
+                </a>
+                <small
+                  >Lorem ipsum dolor sit amet consectetur adipisicing
+                  elit.</small
+                >
+              </div>
+            </div>
+
+            <div class="col-lg-3 mt-4">
+              <div class="box" data-aos="fade-down" data-aos-delay="600">
+                <a href="http://10.0.8.21/simda.php/login">
+                  <img
+                    src="assets/images/simda-cyber.png"
+                    class="img-fluid"
+                    alt=""
+                  />
+                  <h3 class="text-center">Simda Cyber</h3>
+                </a>
+                <small
+                  >Lorem ipsum dolor sit amet consectetur adipisicing
+                  elit</small
+                >
+              </div>
+            </div>
+
+            <div class="col-lg-3 mt-4">
+              <div class="box" data-aos="fade-down" data-aos-delay="200">
+                <a href="#">
+                  <img
+                    src="assets/images/security.png"
+                    class="img-fluid"
+                    alt=""
+                  />
+                  <h3 class="text-center">Open Simda</h3>
+                </a>
+                <small
+                  >Lorem ipsum dolor sit amet consectetur adipisicing
+                  elit</small
+                >
+              </div>
+            </div>
+            <div class="col-lg-3 mt-4">
+              <div class="box" data-aos="fade-down" data-aos-delay="200">
+                <a href="#">
+                  <img src="assets/images/fmis.png" class="img-fluid" alt="" />
+                  <h3 class="text-center">FMIS</h3>
+                </a>
+                <small
+                  >Lorem ipsum dolor sit amet consectetur adipisicing
+                  elit</small
+                >
+              </div>
+            </div>
+
+            <div class="col-lg-3 mt-4">
+              <div class="box" data-aos="fade-down" data-aos-delay="600">
+                <a href="https://superdilan.bpkad.id/">
+                  <img
+                    src="assets/images/super-dilan.png"
+                    class="img-fluid"
+                    alt=""
+                  />
+                  <h3 class="text-center">Super Dilan</h3>
+                </a>
+                <small
+                  >Lorem ipsum dolor sit amet consectetur adipisicing
+                  elit</small
+                >
+              </div>
+            </div>
+
+            <div class="col-lg-3 mt-4">
+              <div class="box" data-aos="fade-down" data-aos-delay="600">
+                <a href="#">
+                  <img src="assets/images/rania.png" class="img-fluid" alt="" />
+                  <h3 class="text-center">Rania</h3>
+                </a>
+                <small
+                  >Lorem ipsum dolor sit amet consectetur adipisicing
+                  elit</small
+                >
+              </div>
+            </div>
+            <div class="col-lg-3 mt-4">
+              <div class="box" data-aos="fade-down" data-aos-delay="600">
+                <a href="#">
+                  <img
+                    src="assets/images/afifah.png"
+                    class="img-fluid"
+                    alt=""
+                  />
+                  <h3 class="text-center">Afifah</h3>
+                </a>
+                <small
+                  >Lorem ipsum dolor sit amet consectetur adipisicing
+                  elit</small
+                >
+              </div>
+            </div>
+            <div class="col-lg-3 mt-4">
+              <div class="box" data-aos="fade-down" data-aos-delay="600">
+                <a href="#/">
+                  <img
+                    src="assets/images/aset-daerah.png"
+                    class="img-fluid"
+                    alt=""
+                  />
+                  <h3 class="text-center">Aisah</h3>
+                </a>
+                <small
+                  >Lorem ipsum dolor sit amet consectetur adipisicing
+                  elit</small
+                >
+              </div>
+            </div>
+            <div class="col-lg-3 mt-4">
+              <div class="box" data-aos="fade-down" data-aos-delay="600">
+                <a href="#">
+                  <img src="assets/images/at.png" class="img-fluid" alt="" />
+                  <h3 class="text-center">AT</h3>
+                </a>
+                <small
+                  >Lorem ipsum dolor sit amet consectetur adipisicing
+                  elit</small
+                >
+              </div>
+            </div>
+            <div class="col-lg-3 mt-4">
+              <div class="box" data-aos="fade-down" data-aos-delay="600">
+                <a href="#">
+                  <img
+                    src="assets/images/pemadam.png"
+                    class="img-fluid"
+                    alt=""
+                  />
+                  <h3 class="text-center">Siska</h3>
+                </a>
+                <small
+                  >Lorem ipsum dolor sit amet consectetur adipisicing
+                  elit</small
+                >
+              </div>
+            </div>
+            <div class="col-lg-3 mt-4">
+              <div class="box" data-aos="fade-down" data-aos-delay="600">
+                <a href="#">
+                  <img
+                    src="assets/images/e-sign.png"
+                    class="img-fluid"
+                    alt=""
+                  />
+                  <h3 class="text-center">E-Sign</h3>
+                </a>
+                <small
+                  >Lorem ipsum dolor sit amet consectetur adipisicing
+                  elit</small
+                >
+              </div>
+            </div>
+            <div class="col-lg-3 mt-4">
+              <div class="box" data-aos="fade-down" data-aos-delay="600">
+                <a href="#">
+                  <img
+                    src="assets/images/academy.png"
+                    class="img-fluid"
+                    alt=""
+                  />
+                  <h3 class="text-center">Academy</h3>
+                </a>
+                <small
+                  >Lorem ipsum dolor sit amet consectetur adipisicing
+                  elit</small
+                >
+              </div>
+            </div>
+            <div class="col-lg-3 mt-4">
+              <div class="box" data-aos="fade-down" data-aos-delay="600">
+                <a href="#">
+                  <img src="assets/images/host.png" class="img-fluid" alt="" />
+                  <h3 class="text-center">Host</h3>
+                </a>
+                <small
+                  >Lorem ipsum dolor sit amet consectetur adipisicing
+                  elit</small
+                >
+              </div>
+            </div>
+            <div class="col-lg-3 mt-4">
+              <div class="box" data-aos="fade-down" data-aos-delay="600">
+                <a href="#">
+                  <img src="assets/images/role.png" class="img-fluid" alt="" />
+                  <h3 class="text-center">Role</h3>
+                </a>
+                <small
+                  >Lorem ipsum dolor sit amet consectetur adipisicing
+                  elit</small
+                >
+              </div>
+            </div>
+            <div class="col-lg-3 mt-4">
+              <div class="box" data-aos="fade-down" data-aos-delay="600">
+                <a href="#">
+                  <img
+                    src="assets/images/permission.png"
+                    class="img-fluid"
+                    alt=""
+                  />
+                  <h3 class="text-center">Permission</h3>
+                </a>
+                <small
+                  >Lorem ipsum dolor sit amet consectetur adipisicing
+                  elit</small
+                >
+              </div>
+            </div>
+            <div class="col-lg-3 mt-4">
+              <div class="box" data-aos="fade-down" data-aos-delay="600">
+                <a href="#">
+                  <img src="assets/images/users.png" class="img-fluid" alt="" />
+                  <h3 class="text-center">Users</h3>
+                </a>
+                <small
+                  >Lorem ipsum dolor sit amet consectetur adipisicing
+                  elit</small
+                >
+              </div>
+            </div>
+            <div class="col-lg-3 mt-4">
+              <div class="box" data-aos="fade-down" data-aos-delay="600">
+                <a href="#">
+                  <img
+                    src="assets/images/domain.png"
+                    class="img-fluid"
+                    alt=""
+                  />
+                  <h3 class="text-center">Domain</h3>
+                </a>
+                <small
+                  >Lorem ipsum dolor sit amet consectetur adipisicing
+                  elit</small
+                >
+              </div>
+            </div>
+            <div class="col-lg-3 mt-4">
+              <div class="box" data-aos="fade-down" data-aos-delay="600">
+                <a href="#">
+                  <img
+                    src="assets/images/module.png"
+                    class="img-fluid"
+                    alt=""
+                  />
+                  <h3 class="text-center">Module</h3>
+                </a>
+                <small
+                  >Lorem ipsum dolor sit amet consectetur adipisicing
+                  elit</small
+                >
+              </div>
+            </div>
+            <div class="col-lg-3 mt-4">
+              <div class="box" data-aos="fade-down" data-aos-delay="600">
+                <a href="#">
+                  <img
+                    src="assets/images/template.png"
+                    class="img-fluid"
+                    alt=""
+                  />
+                  <h3 class="text-center">Template</h3>
+                </a>
+                <small
+                  >Lorem ipsum dolor sit amet consectetur adipisicing
+                  elit</small
+                >
+              </div>
+            </div>
+            <div class="col-lg-3 mt-4">
+              <div class="box" data-aos="fade-down" data-aos-delay="600">
+                <a href="#">
+                  <img
+                    src="assets/images/profile.png"
+                    class="img-fluid"
+                    alt=""
+                  />
+                  <h3 class="text-center">Profile</h3>
+                </a>
+                <small
+                  >Lorem ipsum dolor sit amet consectetur adipisicing
+                  elit</small
+                >
+              </div>
+            </div>
+            <div class="col-lg-3 mt-4">
+              <div class="box" data-aos="fade-down" data-aos-delay="600">
+                <a href="#">
+                  <img
+                    src="assets/images/hak-akses.png"
+                    class="img-fluid"
+                    alt=""
+                  />
+                  <h3 class="text-center">Hak Akses</h3>
+                </a>
+                <small
+                  >Lorem ipsum dolor sit amet consectetur adipisicing
+                  elit</small
+                >
+              </div>
+            </div>
+            <div class="col-lg-3 mt-4">
+              <div class="box" data-aos="fade-down" data-aos-delay="600">
+                <a href="#">
+                  <img src="assets/images/reset.png" class="img-fluid" alt="" />
+                  <h3 class="text-center">Ganti Password</h3>
+                </a>
+                <small
+                  >Lorem ipsum dolor sit amet consectetur adipisicing
+                  elit</small
+                >
+              </div>
+            </div>
+            <div class="col-lg-3 mt-4">
+              <div class="box" data-aos="fade-down" data-aos-delay="600">
+                <a href="#">
+                  <img src="assets/images/exit.png" class="img-fluid" alt="" />
+                  <h3 class="text-center">Logout</h3>
+                </a>
+                <small
+                  >Lorem ipsum dolor sit amet consectetur adipisicing
+                  elit</small
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Values Section -->
+
+      <!-- ======= F.A.Q Section ======= -->
+    </main>
+    <!-- End #main -->
 
     <!-- ======= Footer ======= -->
     <!-- <footer id="footer" class="footer">
@@ -390,20 +575,29 @@
     <!-- End Footer -->
 
     <footer id="footer" class="footer">
-        <!-- Grid container -->
-        <div class="container p-4 pb-0">
-            <div class="mt-5 text-dark">
-                <p class=" text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda atque molestias odio ducimus nisi voluptate in incidunt quo dignissimos illo error, amet, eaque commodi laborum reprehenderit magnam quis! Exercitationem, iusto.</p>
-              </div>
+      <!-- Grid container -->
+      <div class="container p-4 pb-0">
+        <div class="mt-5 text-dark">
+          <p class="text-center">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda
+            atque molestias odio ducimus nisi voluptate in incidunt quo
+            dignissimos illo error, amet, eaque commodi laborum reprehenderit
+            magnam quis! Exercitationem, iusto.
+          </p>
         </div>
-      
-        <!-- Copyright -->
-        <div class="text-center text-dark p-3">
-          © 2022 Copyright:
-          <a class="text-dark" href="http://localhost/bpkad-internal-login/list-aplikasi.html">Integrated System</a>
-        </div>
-        <!-- Copyright -->
-      </footer>
+      </div>
+
+      <!-- Copyright -->
+      <div class="text-center text-dark p-3">
+        © 2022 Copyright:
+        <a
+          class="text-dark"
+          href="http://localhost/bpkad-internal-login/list-aplikasi.html"
+          >Integrated System</a
+        >
+      </div>
+      <!-- Copyright -->
+    </footer>
 
     <!-- Vendor JS Files -->
     <script src="assets/js/list-aplikasi/swiper-bundle.min.js"></script>
@@ -417,108 +611,139 @@
     <script src="assets/js/list-aplikasi/main.js"></script>
 
     <!-- MDB -->
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.2/mdb.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.2/mdb.min.js"
+    ></script>
 
+    <script type="text/javascript">
+      document.addEventListener("DOMContentLoaded", function (event) {
+        var modalLogin = document.getElementById("login");
+        var inputPengguna = document.getElementById("kduser");
 
-<script type="text/javascript">
-    document.addEventListener('DOMContentLoaded', function(event) {
-        var modalLogin = document.getElementById('login')
-        var inputPengguna = document.getElementById('kduser')
+        modalLogin.addEventListener("shown.bs.modal", function () {
+          inputPengguna.focus();
+        });
+      });
+    </script>
 
-        modalLogin.addEventListener('shown.bs.modal', function() {
-            inputPengguna.focus()
-        })
-    });
-</script>
-
-<!-- Modal -->
-<div class="modal fade" id="login" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-    aria-labelledby="loginLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg modal-dialog-centered">
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="login"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="loginLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg modal-dialog-centered">
         <div class="modal-content">
-            <div class="modal-body d-flex justify-content-between">
-                <a href="#" class="logo d-flex align-items-center">
-                    <img src="https://fmis.bpkp.go.id/s2/bojonegorokab/assetsberanda/img/logo.svg" alt="" style="width: 30px;">
-                    <span style="margin-left: 10px; font-family: Nunito;color: navy;"><strong>Otentifikasi</strong>
-                        Pengguna</span>
-                </a>
-                <button type="button" class="btn-close btn-danger" data-bs-dismiss="modal"
-                    aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <div class="row featurette">
-                    <div class="col-md-5 order-md-2">
-                        <form method="POST" action="https://fmis.bpkp.go.id/s2/bojonegorokab/login" autocomplete="off">
-                            <input type="hidden" name="_token" value="KoZedAr8zIDdJYjk4TnFm9LWfLeZJAwP3SQdOg5N">                                <div class="mb-3">
-                                <label for="validationServerUsername" class="form-label"><small> Akun
-                                        Pengguna</small></label>
-                                <input class="form-control " id="kduser"
-                                    name="kduser" value=""" required>
-                                  
-            </div>
-            <div class="       mb-4">
-                                <label for="validationServer05" class="form-label"><small>
-                                        Password</small></label>
-                                <input type="password" class="form-control "
-                                    name="password" id="password" required>
-                            </div>
-                            
+          <div class="modal-body d-flex justify-content-between">
+            <a href="#" class="logo d-flex align-items-center">
+              <img
+                src="https://fmis.bpkp.go.id/s2/bojonegorokab/assetsberanda/img/logo.svg"
+                alt=""
+                style="width: 30px"
+              />
+              <span style="margin-left: 10px; font-family: Nunito; color: navy"
+                ><strong>Otentifikasi</strong> Pengguna</span
+              >
+            </a>
+            <button
+              type="button"
+              class="btn-close btn-danger"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="row featurette">
+              <div class="col-md-5 order-md-2">
+                <form
+                  method="POST"
+                  action="https://fmis.bpkp.go.id/s2/bojonegorokab/login"
+                  autocomplete="off"
+                >
+                  <input
+                    type="hidden"
+                    name="_token"
+                    value="KoZedAr8zIDdJYjk4TnFm9LWfLeZJAwP3SQdOg5N"
+                  />
+                  <div class="mb-3">
+                    <label for="validationServerUsername" class="form-label"
+                      ><small> Akun Pengguna</small></label
+                    >
+                    <input class="form-control " id="kduser" name="kduser"
+                    value=""" required>
+                  </div>
+                  <div class="mb-4">
+                    <label for="validationServer05" class="form-label"
+                      ><small> Password</small></label
+                    >
+                    <input
+                      type="password"
+                      class="form-control"
+                      name="password"
+                      id="password"
+                      required
+                    />
+                  </div>
 
-                            <div class="form-floating mb-3">
-                                <select class="form-select " size="1"
-                                    id="inputState" aria-label="Floating label select example" required
-                                    name="tahun">
-                                                                                <optgroup>
-                                            <option >
-                                                2019</option>
-                                        </optgroup>
-                                                                                <optgroup>
-                                            <option >
-                                                2020</option>
-                                        </optgroup>
-                                                                                <optgroup>
-                                            <option >
-                                                2021</option>
-                                        </optgroup>
-                                                                                <optgroup>
-                                            <option selected>
-                                                2022</option>
-                                        </optgroup>
-                                                                                <optgroup>
-                                            <option >
-                                                2023</option>
-                                        </optgroup>
-                                                                                <optgroup>
-                                            <option >
-                                                2024</option>
-                                        </optgroup>
-                                                                                <optgroup>
-                                            <option >
-                                                2025</option>
-                                        </optgroup>
-                                                                        </select>
-                                <label for="inputState">Pilih Tahun Anggaran</label>
-                                                                </div>
-                            <!-- <div class="mb-3 form-check">
+                  <div class="form-floating mb-3">
+                    <select
+                      class="form-select"
+                      size="1"
+                      id="inputState"
+                      aria-label="Floating label select example"
+                      required
+                      name="tahun"
+                    >
+                      <optgroup>
+                        <option>2019</option>
+                      </optgroup>
+                      <optgroup>
+                        <option>2020</option>
+                      </optgroup>
+                      <optgroup>
+                        <option>2021</option>
+                      </optgroup>
+                      <optgroup>
+                        <option selected>2022</option>
+                      </optgroup>
+                      <optgroup>
+                        <option>2023</option>
+                      </optgroup>
+                      <optgroup>
+                        <option>2024</option>
+                      </optgroup>
+                      <optgroup>
+                        <option>2025</option>
+                      </optgroup>
+                    </select>
+                    <label for="inputState">Pilih Tahun Anggaran</label>
+                  </div>
+                  <!-- <div class="mb-3 form-check">
               <input type="checkbox" class="form-check-input" id="exampleCheck1">
               <label class="form-check-label" for="exampleCheck1">ingat saya</label>
             </div> -->
-                            <button type="submit" class="btn btn-primary btn-block">Masuk</button>
-                        </form>
-                    </div>
-                    <div class="col-md-6 order-md-1 d-flex">
-                        <img src="https://fmis.bpkp.go.id/s2/bojonegorokab/assetsberanda/img/login.svg" alt="" class="mx-auto d-block"
-                            style="max-width: 300px;">
-
-                    </div>
-                </div>
+                  <button type="submit" class="btn btn-primary btn-block">
+                    Masuk
+                  </button>
+                </form>
+              </div>
+              <div class="col-md-6 order-md-1 d-flex">
+                <img
+                  src="https://fmis.bpkp.go.id/s2/bojonegorokab/assetsberanda/img/login.svg"
+                  alt=""
+                  class="mx-auto d-block"
+                  style="max-width: 300px"
+                />
+              </div>
             </div>
-
+          </div>
         </div>
+      </div>
     </div>
-</div>
-
-
-</body>
-
+  </body>
 </html>
